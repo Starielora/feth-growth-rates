@@ -1,0 +1,10 @@
+<RCC>
+    <qresource prefix="/">
+        <file>qtquickcontrols2.conf</file>
+        <file>qml/main.qml</file>
+        <file>qml/Stat.qml</file>
+        <file>qml/CharacterBox.qml</file>
+        <file>data/classes.json</file>
+        <file>data/characters.json</file>
+    </qresource>
+</RCC>

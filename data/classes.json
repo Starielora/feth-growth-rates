@@ -1,0 +1,944 @@
+{
+    "Base":
+    {
+        "growthRates":
+        {
+            "hp": 0,
+            "str": 0,
+            "mag": 0,
+            "dex": 0,
+            "spd": 0,
+            "lck": 0,
+            "def": 0,
+            "res": 0,
+            "charm": 0
+        }
+    },
+    "Noble":
+    {
+        "growthRates":
+        {
+            "hp": 0,
+            "str": 0,
+            "mag": 0,
+            "dex": 0,
+            "spd": 0,
+            "lck": 0,
+            "def": 0,
+            "res": 0,
+            "charm": 5
+        }
+    },
+
+    "Commoner":
+    {
+        "growthRates":
+        {
+            "hp": 0,
+            "str": 0,
+            "mag": 0,
+            "dex": 0,
+            "spd": 0,
+            "lck": 0,
+            "def": 0,
+            "res": 0,
+            "charm": 0
+        }
+    },
+
+    "Dancer":
+    {
+        "growthRates":
+        {
+            "hp": 20,
+            "str": -5,
+            "mag": 0,
+            "dex": 0,
+            "spd": 0,
+            "lck": 0,
+            "def": -5,
+            "res": -5,
+            "charm": 10
+        }
+    },
+
+    "Enlightened One":
+    {
+        "growthRates":
+        {
+            "hp": 20,
+            "str": 10,
+            "mag": 10,
+            "dex": 0,
+            "spd": 0,
+            "lck": 0,
+            "def": 5,
+            "res": 0,
+            "charm": 5
+        }
+    },
+
+    "Armored Lord":
+    {
+        "growthRates":
+        {
+            "hp": 20,
+            "str": 5,
+            "mag": 5,
+            "dex": 0,
+            "spd": 0,
+            "lck": 0,
+            "def": 5,
+            "res": 5,
+            "charm": 10
+        }
+    },
+
+    "High Lord":
+    {
+        "growthRates":
+        {
+            "hp": 20,
+            "str": 5,
+            "mag": 0,
+            "dex": 5,
+            "spd": 0,
+            "lck": 0,
+            "def": 5,
+            "res": 0,
+            "charm": 10
+        }
+    },
+
+    "Wyvern Master":
+    {
+        "growthRates":
+        {
+            "hp": 20,
+            "str": 10,
+            "mag": 0,
+            "dex": 0,
+            "spd": 5,
+            "lck": 0,
+            "def": 5,
+            "res": 0,
+            "charm": 10
+        }
+    },
+
+    "Emperor":
+    {
+        "growthRates":
+        {
+            "hp": 30,
+            "str": 10,
+            "mag": 10,
+            "dex": 0,
+            "spd": 0,
+            "lck": 0,
+            "def": 5,
+            "res": 5,
+            "charm": 10
+        }
+    },
+
+    "Great Lord":
+    {
+        "growthRates":
+        {
+            "hp": 30,
+            "str": 10,
+            "mag": 0,
+            "dex": 10,
+            "spd": 0,
+            "lck": 0,
+            "def": 5,
+            "res": 0,
+            "charm": 10
+        }
+    },
+
+    "Barbarossa":
+    {
+        "growthRates":
+        {
+            "hp": 30,
+            "str": 15,
+            "mag": 0,
+            "dex": 0,
+            "spd": 10,
+            "lck": 0,
+            "def": 5,
+            "res": 0,
+            "charm": 10
+        }
+    },
+
+    "Myrmidon":
+    {
+        "growthRates":
+        {
+            "hp": 10,
+            "str": 0,
+            "mag": 0,
+            "dex": 0,
+            "spd": 5,
+            "lck": 0,
+            "def": 0,
+            "res": -5,
+            "charm": 5
+        }
+    },
+
+    "Soldier":
+    {
+        "growthRates":
+        {
+            "hp": 10,
+            "str": 0,
+            "mag": 0,
+            "dex": 5,
+            "spd": 0,
+            "lck": 0,
+            "def": 0,
+            "res": -5,
+            "charm": 5
+        }
+    },
+
+    "Fighter":
+    {
+        "growthRates":
+        {
+            "hp": 10,
+            "str": 5,
+            "mag": 0,
+            "dex": 0,
+            "spd": 0,
+            "lck": 0,
+            "def": 0,
+            "res": -5,
+            "charm": 5
+        }
+    },
+
+    "Monk":
+    {
+        "growthRates":
+        {
+            "hp": 5,
+            "str": 0,
+            "mag": 0,
+            "dex": 0,
+            "spd": 0,
+            "lck": 0,
+            "def": 0,
+            "res": 5,
+            "charm": 5
+        }
+    },
+
+    "Lord":
+    {
+        "growthRates":
+        {
+            "hp": 20,
+            "str": 0,
+            "mag": 0,
+            "dex": 10,
+            "spd": 0,
+            "lck": 0,
+            "def": 0,
+            "res": 0,
+            "charm": 10
+        }
+    },
+
+    "Mercenary":
+    {
+        "growthRates":
+        {
+            "hp": 20,
+            "str": 5,
+            "mag": 0,
+            "dex": 0,
+            "spd": 5,
+            "lck": 0,
+            "def": 0,
+            "res": -5,
+            "charm": 5
+        }
+    },
+
+    "Thief":
+    {
+        "growthRates":
+        {
+            "hp": 20,
+            "str": 0,
+            "mag": 0,
+            "dex": 10,
+            "spd": 10,
+            "lck": 0,
+            "def": 0,
+            "res": 0,
+            "charm": 5
+        }
+    },
+
+    "Armored Knight":
+    {
+        "growthRates":
+        {
+            "hp": 20,
+            "str": 0,
+            "mag": 0,
+            "dex": 0,
+            "spd": -10,
+            "lck": 0,
+            "def": 10,
+            "res": -5,
+            "charm": 5
+        }
+    },
+
+    "Cavalier":
+    {
+        "growthRates":
+        {
+            "hp": 20,
+            "str": 5,
+            "mag": 0,
+            "dex": 5,
+            "spd": -10,
+            "lck": 0,
+            "def": 5,
+            "res": 0,
+            "charm": 5
+        }
+    },
+
+    "Brigand":
+    {
+        "growthRates":
+        {
+            "hp": 30,
+            "str": 10,
+            "mag": 0,
+            "dex": 0,
+            "spd": 0,
+            "lck": 0,
+            "def": 0,
+            "res": -5,
+            "charm": 5
+        }
+    },
+
+    "Archer":
+    {
+        "growthRates":
+        {
+            "hp": 5,
+            "str": 0,
+            "mag": 0,
+            "dex": 10,
+            "spd": 0,
+            "lck": 5,
+            "def": 0,
+            "res": 0,
+            "charm": 5
+        }
+    },
+
+    "Brawler":
+    {
+        "growthRates":
+        {
+            "hp": 30,
+            "str": 0,
+            "mag": -10,
+            "dex": 10,
+            "spd": 10,
+            "lck": 0,
+            "def": 0,
+            "res": -10,
+            "charm": 5
+        }
+    },
+
+    "Mage":
+    {
+        "growthRates":
+        {
+            "hp": 5,
+            "str": -5,
+            "mag": 10,
+            "dex": 5,
+            "spd": 0,
+            "lck": 0,
+            "def": -5,
+            "res": 5,
+            "charm": 5
+        }
+    },
+
+    "Dark Mage":
+    {
+        "growthRates":
+        {
+            "hp": 5,
+            "str": -5,
+            "mag": 10,
+            "dex": 5,
+            "spd": 0,
+            "lck": 0,
+            "def": -5,
+            "res": 5,
+            "charm": 0
+        }
+    },
+
+    "Priest":
+    {
+        "growthRates":
+        {
+            "hp": 5,
+            "str": -5,
+            "mag": 5,
+            "dex": 5,
+            "spd": 0,
+            "lck": 0,
+            "def": -5,
+            "res": 10,
+            "charm": 10
+        }
+    },
+
+    "Pegasus Knight":
+    {
+        "growthRates":
+        {
+            "hp": 15,
+            "str": 0,
+            "mag": 0,
+            "dex": 0,
+            "spd": 10,
+            "lck": 0,
+            "def": 0,
+            "res": 5,
+            "charm": 10
+        }
+    },
+
+    "Hero":
+    {
+        "growthRates":
+        {
+            "hp": 30,
+            "str": 10,
+            "mag": 0,
+            "dex": 0,
+            "spd": 10,
+            "lck": 0,
+            "def": 0,
+            "res": -5,
+            "charm": 5
+        }
+    },
+
+    "Swordmaster":
+    {
+        "growthRates":
+        {
+            "hp": 25,
+            "str": 10,
+            "mag": 0,
+            "dex": 0,
+            "spd": 20,
+            "lck": 0,
+            "def": 0,
+            "res": -5,
+            "charm": 5
+        }
+    },
+
+    "Assassin":
+    {
+        "growthRates":
+        {
+            "hp": 20,
+            "str": 0,
+            "mag": 0,
+            "dex": 20,
+            "spd": 20,
+            "lck": 0,
+            "def": 0,
+            "res": 0,
+            "charm": 0
+        }
+    },
+
+    "Fortress Knight":
+    {
+        "growthRates":
+        {
+            "hp": 30,
+            "str": 10,
+            "mag": 0,
+            "dex": 0,
+            "spd": -10,
+            "lck": 0,
+            "def": 15,
+            "res": 0,
+            "charm": 5
+        }
+    },
+
+    "Paladin":
+    {
+        "growthRates":
+        {
+            "hp": 30,
+            "str": 10,
+            "mag": 0,
+            "dex": 5,
+            "spd": -10,
+            "lck": 5,
+            "def": 5,
+            "res": 5,
+            "charm": 5
+        }
+    },
+
+    "Wyvern Rider":
+    {
+        "growthRates":
+        {
+            "hp": 30,
+            "str": 10,
+            "mag": -5,
+            "dex": 0,
+            "spd": 0,
+            "lck": 0,
+            "def": 5,
+            "res": -5,
+            "charm": 5
+        }
+    },
+
+    "Warrior":
+    {
+        "growthRates":
+        {
+            "hp": 40,
+            "str": 15,
+            "mag": -5,
+            "dex": 0,
+            "spd": 0,
+            "lck": 0,
+            "def": 0,
+            "res": 0,
+            "charm": 5
+        }
+    },
+
+    "Sniper":
+    {
+        "growthRates":
+        {
+            "hp": 10,
+            "str": 5,
+            "mag": 0,
+            "dex": 20,
+            "spd": 0,
+            "lck": 10,
+            "def": 0,
+            "res": 0,
+            "charm": 5
+        }
+    },
+
+    "Grappler":
+    {
+        "growthRates":
+        {
+            "hp": 40,
+            "str": 10,
+            "mag": 0,
+            "dex": 10,
+            "spd": 10,
+            "lck": 0,
+            "def": 0,
+            "res": 0,
+            "charm": 5
+        }
+    },
+
+    "Warlock":
+    {
+        "growthRates":
+        {
+            "hp": 10,
+            "str": 0,
+            "mag": 10,
+            "dex": 0,
+            "spd": 0,
+            "lck": 0,
+            "def": -5,
+            "res": 5,
+            "charm": 5
+        }
+    },
+
+    "Dark Bishop":
+    {
+        "growthRates":
+        {
+            "hp": 10,
+            "str": 0,
+            "mag": 10,
+            "dex": 0,
+            "spd": 0,
+            "lck": 0,
+            "def": -5,
+            "res": 5,
+            "charm": 0
+        }
+    },
+
+    "Bishop":
+    {
+        "growthRates":
+        {
+            "hp": 10,
+            "str": 0,
+            "mag": 10,
+            "dex": 0,
+            "spd": 0,
+            "lck": 10,
+            "def": -5,
+            "res": 5,
+            "charm": 10
+        }
+    },
+
+    "Falcon Knight":
+    {
+        "growthRates":
+        {
+            "hp": 30,
+            "str": 10,
+            "mag": 0,
+            "dex": 0,
+            "spd": 20,
+            "lck": 0,
+            "def": 0,
+            "res": 5,
+            "charm": 10
+        }
+    },
+
+    "Wyvern Lord":
+    {
+        "growthRates":
+        {
+            "hp": 30,
+            "str": 15,
+            "mag": -5,
+            "dex": 0,
+            "spd": 10,
+            "lck": 0,
+            "def": 5,
+            "res": 0,
+            "charm": 5
+        }
+    },
+
+    "Mortal Savant":
+    {
+        "growthRates":
+        {
+            "hp": 20,
+            "str": 10,
+            "mag": 10,
+            "dex": 0,
+            "spd": -10,
+            "lck": 10,
+            "def": 0,
+            "res": 0,
+            "charm": 5
+        }
+    },
+
+    "Great Knight":
+    {
+        "growthRates":
+        {
+            "hp": 30,
+            "str": 10,
+            "mag": 0,
+            "dex": 0,
+            "spd": -10,
+            "lck": 0,
+            "def": 5,
+            "res": -5,
+            "charm": 5
+        }
+    },
+
+    "Bow Knight":
+    {
+        "growthRates":
+        {
+            "hp": 10,
+            "str": 0,
+            "mag": 0,
+            "dex": 0,
+            "spd": -5,
+            "lck": 0,
+            "def": 0,
+            "res": 0,
+            "charm": 5
+        }
+    },
+
+    "Dark Knight":
+    {
+        "growthRates":
+        {
+            "hp": 10,
+            "str": 5,
+            "mag": 10,
+            "dex": 0,
+            "spd": -5,
+            "lck": 0,
+            "def": 5,
+            "res": 10,
+            "charm": 5
+        }
+    },
+
+    "Holy Knight":
+    {
+        "growthRates":
+        {
+            "hp": 10,
+            "str": 0,
+            "mag": 10,
+            "dex": 0,
+            "spd": -5,
+            "lck": 10,
+            "def": 5,
+            "res": 10,
+            "charm": 10
+        }
+    },
+
+    "War Master":
+    {
+        "growthRates":
+        {
+            "hp": 40,
+            "str": 15,
+            "mag": 0,
+            "dex": 0,
+            "spd": 10,
+            "lck": 0,
+            "def": 0,
+            "res": 0,
+            "charm": 5
+        }
+    },
+
+    "Gremory":
+    {
+        "growthRates":
+        {
+            "hp": 10,
+            "str": 0,
+            "mag": 10,
+            "dex": 10,
+            "spd": 0,
+            "lck": 0,
+            "def": 0,
+            "res": 5,
+            "charm": 10
+        }
+    },
+
+    "Trickster":
+    {
+        "growthRates":
+        {
+            "hp": 20,
+            "str": 0,
+            "mag": 0,
+            "dex": 15,
+            "spd": 20,
+            "lck": 10,
+            "def": 0,
+            "res": 5,
+            "charm": 0
+        }
+    },
+
+    "War Monk/Cleric":
+    {
+        "growthRates":
+        {
+            "hp": 40,
+            "str": 10,
+            "mag": 5,
+            "dex": 10,
+            "spd": 0,
+            "lck": 0,
+            "def": 0,
+            "res": 5,
+            "charm": 5
+        }
+    },
+
+    "Dark Flier":
+    {
+        "growthRates":
+        {
+            "hp": 20,
+            "str": 0,
+            "mag": 0,
+            "dex": 0,
+            "spd": 10,
+            "lck": 0,
+            "def": 0,
+            "res": 10,
+            "charm": 10
+        }
+    },
+
+    "Valkyrie":
+    {
+        "growthRates":
+        {
+            "hp": 5,
+            "str": 0,
+            "mag": 5,
+            "dex": 0,
+            "spd": -5,
+            "lck": 5,
+            "def": 5,
+            "res": 10,
+            "charm": 10
+        }
+    },
+
+    "Death Knight":
+    {
+        "growthRates":
+        {
+            "hp": 30,
+            "str": 10,
+            "mag": 10,
+            "dex": 0,
+            "spd": -5,
+            "lck": 0,
+            "def": 5,
+            "res": 5,
+            "charm": 0
+        }
+    },
+
+    "Archbishop":
+    {
+        "growthRates":
+        {
+            "hp": 40,
+            "str": 10,
+            "mag": 10,
+            "dex": 0,
+            "spd": 0,
+            "lck": 0,
+            "def": 0,
+            "res": 10,
+            "charm": 10
+        }
+    },
+
+    "Death Knight (Enemy)":
+    {
+        "growthRates":
+        {
+            "hp": 20,
+            "str": 0,
+            "mag": 10,
+            "dex": 0,
+            "spd": -5,
+            "lck": 0,
+            "def": 0,
+            "res": 5,
+            "charm": 0
+        }
+    },
+
+    "Flame Emperor":
+    {
+        "growthRates":
+        {
+            "hp": 30,
+            "str": 10,
+            "mag": 10,
+            "dex": 0,
+            "spd": 0,
+            "lck": 0,
+            "def": 5,
+            "res": 5,
+            "charm": 10
+        }
+    },
+
+    "Agastya":
+    {
+        "growthRates":
+        {
+            "hp": 30,
+            "str": 0,
+            "mag": 10,
+            "dex": 0,
+            "spd": 0,
+            "lck": 0,
+            "def": 0,
+            "res": 10,
+            "charm": 10
+        }
+    },
+
+    "Saint":
+    {
+        "growthRates":
+        {
+            "hp": 40,
+            "str": 10,
+            "mag": 10,
+            "dex": 0,
+            "spd": 0,
+            "lck": 0,
+            "def": 0,
+            "res": 10,
+            "charm": 10
+        }
+    },
+
+    "Verrat":
+    {
+        "growthRates":
+        {
+            "hp": 10,
+            "str": 0,
+            "mag": 10,
+            "dex": 0,
+            "spd": 0,
+            "lck": 0,
+            "def": -5,
+            "res": 5,
+            "charm": 5
+        }
+    }
+}

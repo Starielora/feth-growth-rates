@@ -1,0 +1,647 @@
+{
+    "Byleth":
+    {
+        "growthRates":
+        {
+            "hp": 45,
+            "str": 45,
+            "mag": 35,
+            "dex": 45,
+            "spd": 45,
+            "lck": 45,
+            "def": 35,
+            "res": 30,
+            "charm": 45
+        }
+    },
+    "Sothis (NPC)":
+    {
+        "growthRates":
+        {
+            "hp": 35,
+            "str": 30,
+            "mag": 65,
+            "dex": 40,
+            "spd": 40,
+            "lck": 65,
+            "def": 30,
+            "res": 60,
+            "charm": 70
+        }
+    },
+    "Edelgard":
+    {
+        "growthRates":
+        {
+            "hp": 40,
+            "str": 55,
+            "mag": 45,
+            "dex": 45,
+            "spd": 40,
+            "lck": 30,
+            "def": 35,
+            "res": 35,
+            "charm": 60
+        }
+    },
+    "Hubert":
+    {
+        "growthRates":
+        {
+            "hp": 35,
+            "str": 30,
+            "mag": 55,
+            "dex": 45,
+            "spd": 45,
+            "lck": 35,
+            "def": 25,
+            "res": 40,
+            "charm": 35
+        }
+    },
+    "Dorothea":
+    {
+        "growthRates":
+        {
+            "hp": 40,
+            "str": 20,
+            "mag": 40,
+            "dex": 45,
+            "spd": 40,
+            "lck": 35,
+            "def": 15,
+            "res": 35,
+            "charm": 40
+        }
+    },
+    "Ferdinand":
+    {
+        "growthRates":
+        {
+            "hp": 50,
+            "str": 45,
+            "mag": 20,
+            "dex": 40,
+            "spd": 50,
+            "lck": 40,
+            "def": 35,
+            "res": 20,
+            "charm": 40
+        }
+    },
+    "Bernadetta":
+    {
+        "growthRates":
+        {
+            "hp": 35,
+            "str": 35,
+            "mag": 20,
+            "dex": 55,
+            "spd": 50,
+            "lck": 25,
+            "def": 20,
+            "res": 30,
+            "charm": 35
+        }
+    },
+    "Caspar":
+    {
+        "growthRates":
+        {
+            "hp": 55,
+            "str": 45,
+            "mag": 25,
+            "dex": 45,
+            "spd": 45,
+            "lck": 40,
+            "def": 30,
+            "res": 20,
+            "charm": 25
+        }
+    },
+    "Petra":
+    {
+        "growthRates":
+        {
+            "hp": 45,
+            "str": 40,
+            "mag": 25,
+            "dex": 50,
+            "spd": 60,
+            "lck": 45,
+            "def": 30,
+            "res": 15,
+            "charm": 35
+        }
+    },
+    "Linhardt":
+    {
+        "growthRates":
+        {
+            "hp": 30,
+            "str": 30,
+            "mag": 45,
+            "dex": 40,
+            "spd": 40,
+            "lck": 45,
+            "def": 30,
+            "res": 45,
+            "charm": 20
+        }
+    },
+    "Dimitri":
+    {
+        "growthRates":
+        {
+            "hp": 55,
+            "str": 60,
+            "mag": 20,
+            "dex": 50,
+            "spd": 50,
+            "lck": 25,
+            "def": 40,
+            "res": 20,
+            "charm": 55
+        }
+    },
+    "Dedue":
+    {
+        "growthRates":
+        {
+            "hp": 60,
+            "str": 50,
+            "mag": 15,
+            "dex": 30,
+            "spd": 20,
+            "lck": 25,
+            "def": 50,
+            "res": 10,
+            "charm": 30
+        }
+    },
+    "Felix":
+    {
+        "growthRates":
+        {
+            "hp": 45,
+            "str": 55,
+            "mag": 30,
+            "dex": 45,
+            "spd": 55,
+            "lck": 40,
+            "def": 30,
+            "res": 20,
+            "charm": 30
+        }
+    },
+    "Mercedes":
+    {
+        "growthRates":
+        {
+            "hp": 30,
+            "str": 25,
+            "mag": 50,
+            "dex": 45,
+            "spd": 40,
+            "lck": 30,
+            "def": 25,
+            "res": 45,
+            "charm": 40
+        }
+    },
+    "Ashe":
+    {
+        "growthRates":
+        {
+            "hp": 35,
+            "str": 35,
+            "mag": 25,
+            "dex": 55,
+            "spd": 50,
+            "lck": 40,
+            "def": 20,
+            "res": 35,
+            "charm": 25
+        }
+    },
+    "Annette":
+    {
+        "growthRates":
+        {
+            "hp": 25,
+            "str": 30,
+            "mag": 50,
+            "dex": 50,
+            "spd": 35,
+            "lck": 35,
+            "def": 20,
+            "res": 30,
+            "charm": 35
+        }
+    },
+    "Sylvain":
+    {
+        "growthRates":
+        {
+            "hp": 55,
+            "str": 45,
+            "mag": 30,
+            "dex": 35,
+            "spd": 50,
+            "lck": 35,
+            "def": 40,
+            "res": 25,
+            "charm": 40
+        }
+    },
+    "Ingrid":
+    {
+        "growthRates":
+        {
+            "hp": 40,
+            "str": 35,
+            "mag": 35,
+            "dex": 40,
+            "spd": 60,
+            "lck": 45,
+            "def": 30,
+            "res": 40,
+            "charm": 45
+        }
+    },
+    "Claude":
+    {
+        "growthRates":
+        {
+            "hp": 35,
+            "str": 40,
+            "mag": 25,
+            "dex": 60,
+            "spd": 55,
+            "lck": 45,
+            "def": 30,
+            "res": 25,
+            "charm": 55
+        }
+    },
+    "Lorenz":
+    {
+        "growthRates":
+        {
+            "hp": 55,
+            "str": 40,
+            "mag": 40,
+            "dex": 45,
+            "spd": 40,
+            "lck": 25,
+            "def": 30,
+            "res": 40,
+            "charm": 35
+        }
+    },
+    "Hilda":
+    {
+        "growthRates":
+        {
+            "hp": 50,
+            "str": 45,
+            "mag": 25,
+            "dex": 30,
+            "spd": 50,
+            "lck": 35,
+            "def": 35,
+            "res": 20,
+            "charm": 50
+        }
+    },
+    "Raphael":
+    {
+        "growthRates":
+        {
+            "hp": 65,
+            "str": 50,
+            "mag": 15,
+            "dex": 35,
+            "spd": 15,
+            "lck": 35,
+            "def": 45,
+            "res": 10,
+            "charm": 25
+        }
+    },
+    "Lysithea":
+    {
+        "growthRates":
+        {
+            "hp": 20,
+            "str": 15,
+            "mag": 60,
+            "dex": 60,
+            "spd": 50,
+            "lck": 15,
+            "def": 10,
+            "res": 25,
+            "charm": 25
+        }
+    },
+    "Ignatz":
+    {
+        "growthRates":
+        {
+            "hp": 35,
+            "str": 35,
+            "mag": 30,
+            "dex": 50,
+            "spd": 50,
+            "lck": 55,
+            "def": 25,
+            "res": 35,
+            "charm": 25
+        }
+    },
+    "Marianne":
+    {
+        "growthRates":
+        {
+            "hp": 35,
+            "str": 20,
+            "mag": 50,
+            "dex": 40,
+            "spd": 40,
+            "lck": 35,
+            "def": 15,
+            "res": 45,
+            "charm": 40
+        }
+    },
+    "Leonie":
+    {
+        "growthRates":
+        {
+            "hp": 40,
+            "str": 40,
+            "mag": 20,
+            "dex": 55,
+            "spd": 60,
+            "lck": 40,
+            "def": 40,
+            "res": 15,
+            "charm": 40
+        }
+    },
+    "Rhea (NPC)":
+    {
+        "growthRates":
+        {
+            "hp": 45,
+            "str": 35,
+            "mag": 45,
+            "dex": 40,
+            "spd": 40,
+            "lck": 40,
+            "def": 30,
+            "res": 40,
+            "charm": 70
+        }
+    },
+    "Manuela":
+    {
+        "growthRates":
+        {
+            "hp": 50,
+            "str": 35,
+            "mag": 35,
+            "dex": 40,
+            "spd": 60,
+            "lck": 35,
+            "def": 30,
+            "res": 25,
+            "charm": 50
+        }
+    },
+    "Hanneman":
+    {
+        "growthRates":
+        {
+            "hp": 40,
+            "str": 30,
+            "mag": 55,
+            "dex": 45,
+            "spd": 20,
+            "lck": 35,
+            "def": 25,
+            "res": 40,
+            "charm": 35
+        }
+    },
+    "Seteth":
+    {
+        "growthRates":
+        {
+            "hp": 50,
+            "str": 45,
+            "mag": 35,
+            "dex": 50,
+            "spd": 50,
+            "lck": 25,
+            "def": 30,
+            "res": 25,
+            "charm": 45
+        }
+    },
+    "Flayn":
+    {
+        "growthRates":
+        {
+            "hp": 25,
+            "str": 25,
+            "mag": 55,
+            "dex": 45,
+            "spd": 35,
+            "lck": 15,
+            "def": 25,
+            "res": 50,
+            "charm": 45
+        }
+    },
+    "Cyril":
+    {
+        "growthRates":
+        {
+            "hp": 35,
+            "str": 20,
+            "mag": 15,
+            "dex": 40,
+            "spd": 40,
+            "lck": 30,
+            "def": 10,
+            "res": 10,
+            "charm": 15
+        }
+    },
+    "Jeralt (NPC)":
+    {
+        "growthRates":
+        {
+            "hp": 50,
+            "str": 45,
+            "mag": 20,
+            "dex": 45,
+            "spd": 40,
+            "lck": 25,
+            "def": 35,
+            "res": 35,
+            "charm": 35
+        }
+    },
+    "Catherine":
+    {
+        "growthRates":
+        {
+            "hp": 50,
+            "str": 50,
+            "mag": 25,
+            "dex": 40,
+            "spd": 55,
+            "lck": 30,
+            "def": 30,
+            "res": 20,
+            "charm": 25
+        }
+    },
+    "Alois":
+    {
+        "growthRates":
+        {
+            "hp": 45,
+            "str": 45,
+            "mag": 20,
+            "dex": 35,
+            "spd": 40,
+            "lck": 30,
+            "def": 40,
+            "res": 20,
+            "charm": 40
+        }
+    },
+    "Gilbert":
+    {
+        "growthRates":
+        {
+            "hp": 55,
+            "str": 45,
+            "mag": 20,
+            "dex": 45,
+            "spd": 30,
+            "lck": 15,
+            "def": 45,
+            "res": 10,
+            "charm": 35
+        }
+    },
+    "Shamir":
+    {
+        "growthRates":
+        {
+            "hp": 35,
+            "str": 40,
+            "mag": 20,
+            "dex": 55,
+            "spd": 40,
+            "lck": 55,
+            "def": 20,
+            "res": 15,
+            "charm": 30
+        }
+    },
+    "Yuri":
+    {
+        "growthRates":
+        {
+            "hp": 30,
+            "str": 40,
+            "mag": 35,
+            "dex": 40,
+            "spd": 65,
+            "lck": 45,
+            "def": 30,
+            "res": 35,
+            "charm": 50
+        }
+    },
+    "Balthus":
+    {
+        "growthRates":
+        {
+            "hp": 50,
+            "str": 50,
+            "mag": 30,
+            "dex": 25,
+            "spd": 30,
+            "lck": 20,
+            "def": 45,
+            "res": 30,
+            "charm": 30
+        }
+    },
+    "Constance":
+    {
+        "growthRates":
+        {
+            "hp": 20,
+            "str": 20,
+            "mag": 60,
+            "dex": 30,
+            "spd": 35,
+            "lck": 15,
+            "def": 15,
+            "res": 30,
+            "charm": 25
+        }
+    },
+    "Hapi":
+    {
+        "growthRates":
+        {
+            "hp": 35,
+            "str": 35,
+            "mag": 45,
+            "dex": 45,
+            "spd": 40,
+            "lck": 20,
+            "def": 15,
+            "res": 45,
+            "charm": 25
+        }
+    },
+    "Jeritza":
+    {
+        "growthRates":
+        {
+            "hp": 50,
+            "str": 50,
+            "mag": 35,
+            "dex": 35,
+            "spd": 60,
+            "lck": 30,
+            "def": 40,
+            "res": 25,
+            "charm": 25
+        }
+    },
+    "Anna":
+    {
+        "growthRates":
+        {
+            "hp": 35,
+            "str": 35,
+            "mag": 35,
+            "dex": 45,
+            "spd": 55,
+            "lck": 45,
+            "def": 30,
+            "res": 40,
+            "charm": 50 
+        }
+    }
+}
