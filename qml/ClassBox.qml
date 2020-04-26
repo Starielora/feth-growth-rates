@@ -6,7 +6,7 @@ import feth 1.0
 
 GroupBox
 {
-    property FEClass feClass // TODO c++ Character can be confused with qml Character
+    property FETHClass feClass // TODO c++ Character can be confused with qml Character
 
     id: stats
     label: Label

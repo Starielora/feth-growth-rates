@@ -6,4 +6,4 @@ DEFINES += QT_DEPRECATED_WARNINGS
 RESOURCES += ./qml.qrc
 
 SOURCES += ./main.cpp
-HEADERS += ./Character.h ./FEClass.h ./GrowthRates.h
+HEADERS += ./FETHCharacter.h ./FETHClass.h ./FETHGrowthRates.h

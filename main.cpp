@@ -11,14 +11,14 @@
 #include <QList>
 #include <QException>
 
-#include "Character.h"
-#include "FEClass.h"
+#include "FETHCharacter.h"
+#include "FETHClass.h"
 
 #include <exception>
 
 QJsonDocument loadJson(const QString path);
-QList<Character*> loadCharacters();
-QList<FEClass*> loadClasses();
+QList<FETHCharacter*> loadCharacters();
+QList<FETHClass*> loadClasses();
 template<class T>
 void setParent(const QList<T>&, QObject* const);
 
@@ -28,9 +28,9 @@ int main(int argc, char *argv[]) try
 
     QGuiApplication app(argc, argv);
 
-    qmlRegisterUncreatableType<GrowthRates>("feth", 1, 0, "GrowthRates", "GrowthRates instances are provided by the application");
-    qmlRegisterUncreatableType<Character>("feth", 1, 0, "Character", "Character instances are provided by the application");
-    qmlRegisterUncreatableType<FEClass>("feth", 1, 0, "FEClass", "FEClass instance is provided by the application");
+    qmlRegisterUncreatableType<FETHGrowthRates>("feth", 1, 0, "FETHGrowthRates", "FETHGrowthRates instances are provided by the application");
+    qmlRegisterUncreatableType<FETHCharacter>("feth", 1, 0, "FETHCharacter", "FETHCharacter instances are provided by the application");
+    qmlRegisterUncreatableType<FETHClass>("feth", 1, 0, "FETHClass", "FETHClass instance is provided by the application");
 
     const auto feClasses = loadClasses();
     const auto feCharacters = loadCharacters();
@@ -127,14 +127,14 @@ QJsonDocument loadJson(const QString path)
     return jsonDoc;
 }
 
-QList<FEClass*> loadClasses()
+QList<FETHClass*> loadClasses()
 {
     const auto jsonDoc = loadJson(":/data/classes.json");
 
     const auto classesJson = jsonDoc.object();
     const QStringList classNames = classesJson.keys();
 
-    QList<FEClass*> feClasses;
+    QList<FETHClass*> feClasses;
 
     for(const auto& className : classNames)
     {
@@ -153,7 +153,7 @@ QList<FEClass*> loadClasses()
 
         const data::GrowthRates growthRates{hp, str, mag, dex, spd, lck, def, res, charm};
 
-        FEClass* feClass = new FEClass(className, growthRates); // TODO ochange ownership to delete later
+        FETHClass* feClass = new FETHClass(className, growthRates); // TODO ochange ownership to delete later
         feClasses.append(feClass);
     }
 
@@ -163,14 +163,14 @@ QList<FEClass*> loadClasses()
 
 }
 
-QList<Character*> loadCharacters()
+QList<FETHCharacter*> loadCharacters()
 {
     const auto jsonDoc = loadJson(":/data/characters.json");
 
     const auto charactersJson = jsonDoc.object();
     const QStringList characterNames = charactersJson.keys();
 
-    QList<Character*> feCharacters;
+    QList<FETHCharacter*> feCharacters;
 
     for(const auto& charName : characterNames)
     {
@@ -189,7 +189,7 @@ QList<Character*> loadCharacters()
 
         const data::GrowthRates growthRates{hp, str, mag, dex, spd, lck, def, res, charm};
 
-        Character* character = new Character(charName, growthRates); // TODO ochange ownership to delete later
+        FETHCharacter* character = new FETHCharacter(charName, growthRates); // TODO ochange ownership to delete later
         feCharacters.append(character);
     }
 
