@@ -24,7 +24,7 @@ GroupBox
             id: comboBox
             model: characterClasses
             textRole: "name"
-            currentIndex: 7 // TODO index of base class
+            currentIndex: -1
         }
         Stat
         {
@@ -79,6 +79,15 @@ GroupBox
             name: "Charm"
             base: character.baseGrowthRates.charm
             modifier: comboBox.currentValue ? comboBox.currentValue.growthRates.charm : 0
+        }
+        Button
+        {
+            text: "Clear"
+            visible: comboBox.currentIndex !== -1
+            onClicked:
+            {
+                comboBox.currentIndex = -1
+            }
         }
     }
 }
