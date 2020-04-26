@@ -29,56 +29,56 @@ GroupBox
         Stat
         {
             name: "HP"
-            base: character.baseGrowthRates.hp
-            modifier: comboBox.currentValue ? comboBox.currentValue.growthRates.hp : 0
+            characterGrowth: character.baseGrowthRates.hp
+            classGrowth: comboBox.currentValue ? comboBox.currentValue.growthRates.hp : 0
         }
         Stat
         {
             name: "Str"
-            base: character.baseGrowthRates.str
-            modifier: comboBox.currentValue ? comboBox.currentValue.growthRates.str : 0
+            characterGrowth: character.baseGrowthRates.str
+            classGrowth: comboBox.currentValue ? comboBox.currentValue.growthRates.str : 0
         }
         Stat
         {
             name: "Mag"
-            base: character.baseGrowthRates.mag
-            modifier: comboBox.currentValue ? comboBox.currentValue.growthRates.mag : 0
+            characterGrowth: character.baseGrowthRates.mag
+            classGrowth: comboBox.currentValue ? comboBox.currentValue.growthRates.mag : 0
         }
         Stat
         {
             name: "Dex"
-            base: character.baseGrowthRates.dex
-            modifier: comboBox.currentValue ? comboBox.currentValue.growthRates.dex : 0
+            characterGrowth: character.baseGrowthRates.dex
+            classGrowth: comboBox.currentValue ? comboBox.currentValue.growthRates.dex : 0
         }
         Stat
         {
             name: "Spd"
-            base: character.baseGrowthRates.spd
-            modifier: comboBox.currentValue ? comboBox.currentValue.growthRates.spd : 0
+            characterGrowth: character.baseGrowthRates.spd
+            classGrowth: comboBox.currentValue ? comboBox.currentValue.growthRates.spd : 0
         }
         Stat
         {
             name: "Lck"
-            base: character.baseGrowthRates.lck
-            modifier: comboBox.currentValue ? comboBox.currentValue.growthRates.lck : 0
+            characterGrowth: character.baseGrowthRates.lck
+            classGrowth: comboBox.currentValue ? comboBox.currentValue.growthRates.lck : 0
         }
         Stat
         {
             name: "Def"
-            base: character.baseGrowthRates.def
-            modifier: comboBox.currentValue ? comboBox.currentValue.growthRates.def : 0
+            characterGrowth: character.baseGrowthRates.def
+            classGrowth: comboBox.currentValue ? comboBox.currentValue.growthRates.def : 0
         }
         Stat
         {
             name: "Res"
-            base: character.baseGrowthRates.res
-            modifier: comboBox.currentValue ? comboBox.currentValue.growthRates.res : 0
+            characterGrowth: character.baseGrowthRates.res
+            classGrowth: comboBox.currentValue ? comboBox.currentValue.growthRates.res : 0
         }
         Stat
         {
             name: "Charm"
-            base: character.baseGrowthRates.charm
-            modifier: comboBox.currentValue ? comboBox.currentValue.growthRates.charm : 0
+            characterGrowth: character.baseGrowthRates.charm
+            classGrowth: comboBox.currentValue ? comboBox.currentValue.growthRates.charm : 0
         }
         Button
         {

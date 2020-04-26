@@ -6,8 +6,8 @@ import QtGraphicalEffects 1.0
 ColumnLayout
 {
     property alias name: statNameLabel.text
-    property int base: 0
-    property int modifier: 0
+    property int characterGrowth: 0
+    property int classGrowth: 0
 
     spacing: 0
     Label
@@ -21,7 +21,7 @@ ColumnLayout
     }
     Label
     {
-        text: base + modifier
+        text: characterGrowth + classGrowth
         Layout.fillHeight: true
         Layout.fillWidth: true
         horizontalAlignment: Text.AlignHCenter
@@ -29,14 +29,14 @@ ColumnLayout
 
         color:
         {
-            if(modifier == 0) return "white" // TODO will break if material theme is changed.. should be theme-default
-            else if(modifier > 0) return "green"
+            if(classGrowth == 0) return "white" // TODO will break if material theme is changed.. should be theme-default
+            else if(classGrowth > 0) return "green"
             else return "red"
         }
 
         MouseArea
         {
-            enabled: modifier != 0
+            enabled: classGrowth != 0
             anchors.fill: parent
 
             pressAndHoldInterval: 0
@@ -57,8 +57,8 @@ ColumnLayout
             id: toolTip
             text:
             {
-                var sign = modifier > 0 ? " + " : " - "
-                return base + sign + Math.abs(modifier)
+                var sign = classGrowth > 0 ? " + " : " - "
+                return characterGrowth + sign + Math.abs(classGrowth)
             }
         }
     }
