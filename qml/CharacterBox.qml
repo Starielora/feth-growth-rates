@@ -21,67 +21,64 @@ GroupBox
 
         ComboBox
         {
+            id: comboBox
             model: characterClasses
             textRole: "name"
             currentIndex: 7 // TODO index of base class
-            onActivated:
-            {
-                character.characterClass = currentValue
-            }
         }
         Stat
         {
             name: "HP"
             base: character.baseGrowthRates.hp
-            modifier: character.characterClass.growthRates.hp
+            modifier: comboBox.currentValue ? comboBox.currentValue.growthRates.hp : 0
         }
         Stat
         {
             name: "Str"
             base: character.baseGrowthRates.str
-            modifier: character.characterClass.growthRates.str
+            modifier: comboBox.currentValue ? comboBox.currentValue.growthRates.str : 0
         }
         Stat
         {
             name: "Mag"
             base: character.baseGrowthRates.mag
-            modifier: character.characterClass.growthRates.mag
+            modifier: comboBox.currentValue ? comboBox.currentValue.growthRates.mag : 0
         }
         Stat
         {
             name: "Dex"
             base: character.baseGrowthRates.dex
-            modifier: character.characterClass.growthRates.dex
+            modifier: comboBox.currentValue ? comboBox.currentValue.growthRates.dex : 0
         }
         Stat
         {
             name: "Spd"
             base: character.baseGrowthRates.spd
-            modifier: character.characterClass.growthRates.spd
+            modifier: comboBox.currentValue ? comboBox.currentValue.growthRates.spd : 0
         }
         Stat
         {
             name: "Lck"
             base: character.baseGrowthRates.lck
-            modifier: character.characterClass.growthRates.lck
+            modifier: comboBox.currentValue ? comboBox.currentValue.growthRates.lck : 0
         }
         Stat
         {
             name: "Def"
             base: character.baseGrowthRates.def
-            modifier: character.characterClass.growthRates.def
+            modifier: comboBox.currentValue ? comboBox.currentValue.growthRates.def : 0
         }
         Stat
         {
             name: "Res"
             base: character.baseGrowthRates.res
-            modifier: character.characterClass.growthRates.res
+            modifier: comboBox.currentValue ? comboBox.currentValue.growthRates.res : 0
         }
         Stat
         {
             name: "Charm"
             base: character.baseGrowthRates.charm
-            modifier: character.characterClass.growthRates.charm
+            modifier: comboBox.currentValue ? comboBox.currentValue.growthRates.charm : 0
         }
     }
 }

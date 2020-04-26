@@ -12,7 +12,6 @@ class Character final : public QObject
 
     Q_PROPERTY(QString name READ getName CONSTANT FINAL)
     Q_PROPERTY(GrowthRates* baseGrowthRates READ getBaseGrowthRates CONSTANT FINAL)
-    Q_PROPERTY(FEClass* characterClass READ getClass WRITE setClass NOTIFY classChanged)
 
 public:
     Character(const QString& name, data::GrowthRates baseGrowthRates) : _name(name), _baseGrowthRates(baseGrowthRates)
@@ -30,22 +29,8 @@ public:
     {
         return &_baseGrowthRates;
     }
-    FEClass* getClass() { return _class; }
-
-    void setClass(FEClass* const c)
-    {
-        if(c != _class)
-        {
-            _class = c;
-            emit classChanged();
-        }
-    }
-
-signals:
-    void classChanged();
 
 private:
     const QString _name;
     GrowthRates _baseGrowthRates; // TODO const
-    FEClass* _class;
 };

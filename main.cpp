@@ -21,8 +21,6 @@ QList<Character*> loadCharacters();
 QList<FEClass*> loadClasses();
 template<class T>
 void setParent(const QList<T>&, QObject* const);
-FEClass* findClass(const QString&, const QList<FEClass*>&);
-void setClass(const QList<Character*>&, FEClass* const);
 
 int main(int argc, char *argv[]) try
 {
@@ -39,9 +37,6 @@ int main(int argc, char *argv[]) try
 
     setParent(feClasses, &app);
     setParent(feCharacters, &app);
-
-    const auto baseClass = findClass("Base", feClasses);
-    setClass(feCharacters, baseClass);
 
     QQmlApplicationEngine engine;
 
@@ -70,27 +65,6 @@ void setParent(const QList<T>& list, QObject* const p)
     for(const auto& elem : list)
     {
         elem->setParent(p);
-    }
-}
-
-FEClass* findClass(const QString& name, const QList<FEClass*>& list)
-{
-    for(const auto& c : list)
-    {
-        if(c->getName() == name)
-        {
-            return c;
-        }
-    }
-
-    throw std::runtime_error("Could not find class " + name.toStdString());
-}
-
-void setClass(const QList<Character*>& list, FEClass* const c)
-{
-    for(const auto& character : list)
-    {
-        character->setClass(c);
     }
 }
 
