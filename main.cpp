@@ -1,20 +1,18 @@
 #include <QGuiApplication>
 #include <QQmlApplicationEngine>
 #include <QQmlContext>
-#include <QSettings>
-#include <QQuickStyle>
-#include <QIcon>
 #include <QList>
 #include <QJsonDocument>
 #include <QJsonObject>
 #include <QFile>
-#include <QList>
-#include <QException>
+#include <QDebug>
 
 #include "FETHCharacter.h"
 #include "FETHClass.h"
+#include "FETHGrowthRates.h"
 
 #include <exception>
+#include <memory>
 
 QJsonDocument loadJson(const QString path);
 QList<FETHCharacter*> loadCharacters();
@@ -151,9 +149,8 @@ QList<FETHClass*> loadClasses()
         const int res = getValue("res", growthRatesJson);
         const int charm = getValue("charm", growthRatesJson);
 
-        const data::GrowthRates growthRates{hp, str, mag, dex, spd, lck, def, res, charm};
-
-        FETHClass* feClass = new FETHClass(className, growthRates); // TODO ochange ownership to delete later
+        const auto growthRates = std::make_shared<FETHGrowthRates>(hp, str, mag, dex, spd, lck, def, res, charm);
+        FETHClass* feClass = new FETHClass(className, std::move(growthRates)); // TODO ochange ownership to delete later
         feClasses.append(feClass);
     }
 
@@ -187,8 +184,7 @@ QList<FETHCharacter*> loadCharacters()
         const int res = getValue("res", growthRatesJson);
         const int charm = getValue("charm", growthRatesJson);
 
-        const data::GrowthRates growthRates{hp, str, mag, dex, spd, lck, def, res, charm};
-
+        const auto growthRates = std::make_shared<FETHGrowthRates>(hp, str, mag, dex, spd, lck, def, res, charm);
         FETHCharacter* character = new FETHCharacter(charName, growthRates); // TODO ochange ownership to delete later
         feCharacters.append(character);
     }

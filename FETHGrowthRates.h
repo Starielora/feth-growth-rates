@@ -1,24 +1,6 @@
 #pragma once
 
-#include <cstdint>
-
 #include <QObject>
-
-namespace data
-{
-    struct GrowthRates
-    {
-        const std::int32_t hp;
-        const std::int32_t str;
-        const std::int32_t mag;
-        const std::int32_t dex;
-        const std::int32_t spd;
-        const std::int32_t lck;
-        const std::int32_t def;
-        const std::int32_t res;
-        const std::int32_t charm;
-    };
-}
 
 class FETHGrowthRates final : public QObject
 {
@@ -35,21 +17,30 @@ class FETHGrowthRates final : public QObject
     Q_PROPERTY(qint32 charm READ getCharm CONSTANT FINAL)
 
 public:
-    FETHGrowthRates(data::GrowthRates data) : _data(data)
+    FETHGrowthRates(qint32 hp, qint32 str, qint32 mag, qint32 dex, qint32 spd, qint32 lck, qint32 def, qint32 res, qint32 charm)
+        : _hp(hp), _str(str), _mag(mag), _dex(dex), _spd(spd), _lck(lck), _def(def), _res(res), _charm(charm)
     {
 
     }
 
-    qint32 getHp() { return _data.hp; }
-    qint32 getStr() { return _data.str; }
-    qint32 getMag() { return _data.mag; }
-    qint32 getDex() { return _data.dex; }
-    qint32 getSpd() { return _data.spd; }
-    qint32 getLck() { return _data.lck; }
-    qint32 getDef() { return _data.def; }
-    qint32 getRes() { return _data.res; }
-    qint32 getCharm() { return _data.charm; }
+    qint32 getHp() { return _hp; }
+    qint32 getStr() { return _str; }
+    qint32 getMag() { return _mag; }
+    qint32 getDex() { return _dex; }
+    qint32 getSpd() { return _spd; }
+    qint32 getLck() { return _lck; }
+    qint32 getDef() { return _def; }
+    qint32 getRes() { return _res; }
+    qint32 getCharm() { return _charm; }
 
 private:
-    const data::GrowthRates _data;
+    const qint32 _hp;
+    const qint32 _str;
+    const qint32 _mag;
+    const qint32 _dex;
+    const qint32 _spd;
+    const qint32 _lck;
+    const qint32 _def;
+    const qint32 _res;
+    const qint32 _charm;
 };

@@ -1,10 +1,10 @@
 #pragma once
 
-#include "FETHGrowthRates.h"
-#include "FETHClass.h"
-
 #include <QObject>
-#include <QDebug>
+
+#include <memory>
+
+class FETHGrowthRates;
 
 class FETHCharacter final : public QObject
 {
@@ -14,7 +14,7 @@ class FETHCharacter final : public QObject
     Q_PROPERTY(FETHGrowthRates* baseGrowthRates READ getBaseGrowthRates CONSTANT FINAL)
 
 public:
-    FETHCharacter(const QString& name, data::GrowthRates baseGrowthRates) : _name(name), _baseGrowthRates(baseGrowthRates)
+    FETHCharacter(const QString& name,  std::shared_ptr<FETHGrowthRates> growthRates) : _name(name), _baseGrowthRates(std::move(growthRates))
     {
 
     }
@@ -22,10 +22,10 @@ public:
     QString getName() const { return _name; }
     FETHGrowthRates* getBaseGrowthRates()
     {
-        return &_baseGrowthRates;
+        return _baseGrowthRates.get();
     }
 
 private:
     const QString _name;
-    FETHGrowthRates _baseGrowthRates; // TODO const
+    const std::shared_ptr<FETHGrowthRates> _baseGrowthRates;
 };
