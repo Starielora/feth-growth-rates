@@ -12,18 +12,55 @@ ApplicationWindow
     visible: true
     title: "Fire Emblem: Three Houses Growth Rates"
 
-    ListView
+    SwipeView
     {
         anchors.fill: parent
-        contentWidth: contentItem.childrenRect.width
-        spacing: 5
-        flickableDirection: Flickable.AutoFlickIfNeeded
+        interactive: false
+        currentIndex: bar.currentIndex
 
-        model: characters
+        ListView
+        {
+            clip: true
+            contentWidth: contentItem.childrenRect.width
+            spacing: 5
+            flickableDirection: Flickable.AutoFlickIfNeeded
 
-        delegate: CharacterBox { character: model.modelData }
+            model: characters
 
-        ScrollIndicator.vertical: ScrollIndicator { }
-        ScrollIndicator.horizontal: ScrollIndicator { }
+            delegate: CharacterBox { character: model.modelData }
+
+            ScrollIndicator.vertical: ScrollIndicator { }
+            ScrollIndicator.horizontal: ScrollIndicator { }
+        }
+
+        ListView
+        {
+            clip: true
+            contentWidth: contentItem.childrenRect.width
+            spacing: 5
+            flickableDirection: Flickable.AutoFlickIfNeeded
+
+            model: characterClasses
+
+            delegate: ClassBox { feClass: model.modelData }
+
+            ScrollIndicator.vertical: ScrollIndicator { }
+            ScrollIndicator.horizontal: ScrollIndicator { }
+        }
+    }
+
+    footer: TabBar {
+        id: bar
+        width: parent.width
+
+        TabButton
+        {
+            text: "Characters"
+        }
+
+        TabButton
+        {
+            text: "Classes"
+        }
     }
 }
