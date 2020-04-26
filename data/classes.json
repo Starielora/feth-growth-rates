@@ -1,19 +1,4 @@
 {
-    "Base":
-    {
-        "growthRates":
-        {
-            "hp": 0,
-            "str": 0,
-            "mag": 0,
-            "dex": 0,
-            "spd": 0,
-            "lck": 0,
-            "def": 0,
-            "res": 0,
-            "charm": 0
-        }
-    },
     "Noble":
     {
         "growthRates":
