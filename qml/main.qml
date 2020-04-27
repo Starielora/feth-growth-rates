@@ -20,10 +20,43 @@ ApplicationWindow
 
         ListView
         {
+            id: charsListView
             clip: true
             contentWidth: contentItem.childrenRect.width
             spacing: 5
             flickableDirection: Flickable.AutoFlickIfNeeded
+
+            property bool filtered: false
+            property var filteredItems: []
+
+            header: RowLayout
+            {
+                spacing: 10
+
+                TextField
+                {
+                    placeholderText: "Filter characters..."
+                    onTextChanged:
+                    {
+                        charsListView.showFilteredItems(text);
+                        forceActiveFocus()
+                    }
+                }
+
+                ComboBox
+                {
+                    currentIndex: -1
+                    model: {
+                        var houses = new Set()
+                        houses.add("")
+                        characters.forEach(c => houses.add(c.house))
+                        return Array.from(houses)
+                    }
+                    onCurrentIndexChanged: {
+                        charsListView.showFilteredSections(textAt(currentIndex))
+                    }
+                }
+            }
 
             model: characters
 
@@ -43,6 +76,36 @@ ApplicationWindow
                     text: section
                     font.bold: true
                     font.pointSize: 14
+                }
+            }
+
+            function showFilteredItems(text)
+            {
+                charsListView.filteredItems.length = 0
+                if(text !== "")
+                {
+                    filtered = true
+                    model = characters.filter(c => c.name.toLowerCase().match(text.toLowerCase()) || c.house.toLowerCase().match(text.toLowerCase()))
+                }
+                else
+                {
+                    filtered = false
+                    model = characters
+                }
+            }
+
+            function showFilteredSections(text)
+            {
+                charsListView.filteredItems.length = 0
+                if(text !== "")
+                {
+                    filtered = true
+                    model = characters.filter(c => c.house.toLowerCase().match(text.toLowerCase()))
+                }
+                else
+                {
+                    filtered = false
+                    model = characters
                 }
             }
         }
