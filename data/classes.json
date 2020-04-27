@@ -12,7 +12,8 @@
             "def": 0,
             "res": 0,
             "charm": 5
-        }
+        },
+        "type": "Unique"
     },
 
     "Commoner":
@@ -28,7 +29,8 @@
             "def": 0,
             "res": 0,
             "charm": 0
-        }
+        },
+        "type": "Unique"
     },
 
     "Dancer":
@@ -44,7 +46,8 @@
             "def": -5,
             "res": -5,
             "charm": 10
-        }
+        },
+        "type": "Unique"
     },
 
     "Enlightened One":
@@ -60,7 +63,8 @@
             "def": 5,
             "res": 0,
             "charm": 5
-        }
+        },
+        "type": "Unique"
     },
 
     "Armored Lord":
@@ -76,7 +80,8 @@
             "def": 5,
             "res": 5,
             "charm": 10
-        }
+        },
+        "type": "Unique"
     },
 
     "High Lord":
@@ -92,7 +97,8 @@
             "def": 5,
             "res": 0,
             "charm": 10
-        }
+        },
+        "type": "Unique"
     },
 
     "Wyvern Master":
@@ -108,7 +114,8 @@
             "def": 5,
             "res": 0,
             "charm": 10
-        }
+        },
+        "type": "Unique"
     },
 
     "Emperor":
@@ -124,7 +131,8 @@
             "def": 5,
             "res": 5,
             "charm": 10
-        }
+        },
+        "type": "Unique"
     },
 
     "Great Lord":
@@ -140,7 +148,8 @@
             "def": 5,
             "res": 0,
             "charm": 10
-        }
+        },
+        "type": "Unique"
     },
 
     "Barbarossa":
@@ -156,7 +165,8 @@
             "def": 5,
             "res": 0,
             "charm": 10
-        }
+        },
+        "type": "Unique"
     },
 
     "Myrmidon":
@@ -172,7 +182,8 @@
             "def": 0,
             "res": -5,
             "charm": 5
-        }
+        },
+        "type": "Beginner"
     },
 
     "Soldier":
@@ -188,7 +199,8 @@
             "def": 0,
             "res": -5,
             "charm": 5
-        }
+        },
+        "type": "Beginner"
     },
 
     "Fighter":
@@ -204,7 +216,8 @@
             "def": 0,
             "res": -5,
             "charm": 5
-        }
+        },
+        "type": "Beginner"
     },
 
     "Monk":
@@ -220,7 +233,8 @@
             "def": 0,
             "res": 5,
             "charm": 5
-        }
+        },
+        "type": "Beginner"
     },
 
     "Lord":
@@ -236,7 +250,8 @@
             "def": 0,
             "res": 0,
             "charm": 10
-        }
+        },
+        "type": "Intermediate"
     },
 
     "Mercenary":
@@ -252,7 +267,8 @@
             "def": 0,
             "res": -5,
             "charm": 5
-        }
+        },
+        "type": "Intermediate"
     },
 
     "Thief":
@@ -268,7 +284,8 @@
             "def": 0,
             "res": 0,
             "charm": 5
-        }
+        },
+        "type": "Intermediate"
     },
 
     "Armored Knight":
@@ -284,7 +301,8 @@
             "def": 10,
             "res": -5,
             "charm": 5
-        }
+        },
+        "type": "Intermediate"
     },
 
     "Cavalier":
@@ -300,7 +318,8 @@
             "def": 5,
             "res": 0,
             "charm": 5
-        }
+        },
+        "type": "Intermediate"
     },
 
     "Brigand":
@@ -316,7 +335,8 @@
             "def": 0,
             "res": -5,
             "charm": 5
-        }
+        },
+        "type": "Intermediate"
     },
 
     "Archer":
@@ -332,7 +352,8 @@
             "def": 0,
             "res": 0,
             "charm": 5
-        }
+        },
+        "type": "Intermediate"
     },
 
     "Brawler":
@@ -348,7 +369,8 @@
             "def": 0,
             "res": -10,
             "charm": 5
-        }
+        },
+        "type": "Intermediate"
     },
 
     "Mage":
@@ -364,7 +386,8 @@
             "def": -5,
             "res": 5,
             "charm": 5
-        }
+        },
+        "type": "Intermediate"
     },
 
     "Dark Mage":
@@ -380,7 +403,8 @@
             "def": -5,
             "res": 5,
             "charm": 0
-        }
+        },
+        "type": "Intermediate"
     },
 
     "Priest":
@@ -396,7 +420,8 @@
             "def": -5,
             "res": 10,
             "charm": 10
-        }
+        },
+        "type": "Intermediate"
     },
 
     "Pegasus Knight":
@@ -412,7 +437,8 @@
             "def": 0,
             "res": 5,
             "charm": 10
-        }
+        },
+        "type": "Intermediate"
     },
 
     "Hero":
@@ -428,7 +454,8 @@
             "def": 0,
             "res": -5,
             "charm": 5
-        }
+        },
+        "type": "Advanced"
     },
 
     "Swordmaster":
@@ -444,7 +471,8 @@
             "def": 0,
             "res": -5,
             "charm": 5
-        }
+        },
+        "type": "Advanced"
     },
 
     "Assassin":
@@ -460,7 +488,8 @@
             "def": 0,
             "res": 0,
             "charm": 0
-        }
+        },
+        "type": "Advanced"
     },
 
     "Fortress Knight":
@@ -476,7 +505,8 @@
             "def": 15,
             "res": 0,
             "charm": 5
-        }
+        },
+        "type": "Advanced"
     },
 
     "Paladin":
@@ -492,7 +522,8 @@
             "def": 5,
             "res": 5,
             "charm": 5
-        }
+        },
+        "type": "Advanced"
     },
 
     "Wyvern Rider":
@@ -508,7 +539,8 @@
             "def": 5,
             "res": -5,
             "charm": 5
-        }
+        },
+        "type": "Advanced"
     },
 
     "Warrior":
@@ -524,7 +556,8 @@
             "def": 0,
             "res": 0,
             "charm": 5
-        }
+        },
+        "type": "Advanced"
     },
 
     "Sniper":
@@ -540,7 +573,8 @@
             "def": 0,
             "res": 0,
             "charm": 5
-        }
+        },
+        "type": "Advanced"
     },
 
     "Grappler":
@@ -556,7 +590,8 @@
             "def": 0,
             "res": 0,
             "charm": 5
-        }
+        },
+        "type": "Advanced"
     },
 
     "Warlock":
@@ -572,7 +607,8 @@
             "def": -5,
             "res": 5,
             "charm": 5
-        }
+        },
+        "type": "Advanced"
     },
 
     "Dark Bishop":
@@ -588,7 +624,8 @@
             "def": -5,
             "res": 5,
             "charm": 0
-        }
+        },
+        "type": "Advanced"
     },
 
     "Bishop":
@@ -604,7 +641,8 @@
             "def": -5,
             "res": 5,
             "charm": 10
-        }
+        },
+        "type": "Advanced"
     },
 
     "Falcon Knight":
@@ -620,7 +658,8 @@
             "def": 0,
             "res": 5,
             "charm": 10
-        }
+        },
+        "type": "Master"
     },
 
     "Wyvern Lord":
@@ -636,7 +675,8 @@
             "def": 5,
             "res": 0,
             "charm": 5
-        }
+        },
+        "type": "Master"
     },
 
     "Mortal Savant":
@@ -652,7 +692,8 @@
             "def": 0,
             "res": 0,
             "charm": 5
-        }
+        },
+        "type": "Master"
     },
 
     "Great Knight":
@@ -668,7 +709,8 @@
             "def": 5,
             "res": -5,
             "charm": 5
-        }
+        },
+        "type": "Master"
     },
 
     "Bow Knight":
@@ -684,7 +726,8 @@
             "def": 0,
             "res": 0,
             "charm": 5
-        }
+        },
+        "type": "Master"
     },
 
     "Dark Knight":
@@ -700,7 +743,8 @@
             "def": 5,
             "res": 10,
             "charm": 5
-        }
+        },
+        "type": "Master"
     },
 
     "Holy Knight":
@@ -716,7 +760,8 @@
             "def": 5,
             "res": 10,
             "charm": 10
-        }
+        },
+        "type": "Master"
     },
 
     "War Master":
@@ -732,7 +777,8 @@
             "def": 0,
             "res": 0,
             "charm": 5
-        }
+        },
+        "type": "Master"
     },
 
     "Gremory":
@@ -748,7 +794,8 @@
             "def": 0,
             "res": 5,
             "charm": 10
-        }
+        },
+        "type": "Master"
     },
 
     "Trickster":
@@ -764,7 +811,8 @@
             "def": 0,
             "res": 5,
             "charm": 0
-        }
+        },
+        "type": "Special"
     },
 
     "War Monk/Cleric":
@@ -780,7 +828,8 @@
             "def": 0,
             "res": 5,
             "charm": 5
-        }
+        },
+        "type": "Special"
     },
 
     "Dark Flier":
@@ -796,7 +845,8 @@
             "def": 0,
             "res": 10,
             "charm": 10
-        }
+        },
+        "type": "Special"
     },
 
     "Valkyrie":
@@ -812,7 +862,8 @@
             "def": 5,
             "res": 10,
             "charm": 10
-        }
+        },
+        "type": "Special"
     },
 
     "Death Knight":
@@ -828,7 +879,8 @@
             "def": 5,
             "res": 5,
             "charm": 0
-        }
+        },
+        "type": "Special"
     },
 
     "Archbishop":
@@ -844,7 +896,8 @@
             "def": 0,
             "res": 10,
             "charm": 10
-        }
+        },
+        "type": "Enemy/NPC"
     },
 
     "Death Knight (Enemy)":
@@ -860,7 +913,8 @@
             "def": 0,
             "res": 5,
             "charm": 0
-        }
+        },
+        "type": "Enemy/NPC"
     },
 
     "Flame Emperor":
@@ -876,7 +930,8 @@
             "def": 5,
             "res": 5,
             "charm": 10
-        }
+        },
+        "type": "Enemy/NPC"
     },
 
     "Agastya":
@@ -892,7 +947,8 @@
             "def": 0,
             "res": 10,
             "charm": 10
-        }
+        },
+        "type": "Enemy/NPC"
     },
 
     "Saint":
@@ -908,7 +964,8 @@
             "def": 0,
             "res": 10,
             "charm": 10
-        }
+        },
+        "type": "Enemy/NPC"
     },
 
     "Verrat":
@@ -924,6 +981,7 @@
             "def": -5,
             "res": 5,
             "charm": 5
-        }
+        },
+        "type": "Enemy/NPC"
     }
 }

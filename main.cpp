@@ -30,8 +30,14 @@ int main(int argc, char *argv[]) try
     qmlRegisterUncreatableType<FETHCharacter>("feth", 1, 0, "FETHCharacter", "FETHCharacter instances are provided by the application");
     qmlRegisterUncreatableType<FETHClass>("feth", 1, 0, "FETHClass", "FETHClass instance is provided by the application");
 
-    const auto feClasses = loadClasses();
+    auto feClasses = loadClasses();
     const auto feCharacters = loadCharacters();
+
+    std::sort(feClasses.begin(), feClasses.end(), [](const FETHClass* const left, const FETHClass* const right){
+        const auto leftIndex = left->getClassTypeOrderIndex();
+        const auto rightIndex = right->getClassTypeOrderIndex();
+        return leftIndex < rightIndex;
+    });
 
     setParent(feClasses, &app);
     setParent(feCharacters, &app);
@@ -105,6 +111,23 @@ int getValue(const QString& name, const QJsonObject& json)
     return static_cast<int>(val.toDouble()); // TODO
 }
 
+QString getString(const QString& name, const QJsonObject& json)
+{
+    if(!json.contains(name))
+    {
+        throw std::runtime_error("Json object does not contain key: " + name.toStdString());
+    }
+
+    const auto val = json.value(name);
+
+    if(!val.isString())
+    {
+        throw std::runtime_error(name.toStdString() + " is not string type.");
+    }
+
+    return val.toString();
+}
+
 QJsonDocument loadJson(const QString path)
 {
     QFile f(path);
@@ -137,6 +160,7 @@ QList<FETHClass*> loadClasses()
     for(const auto& className : classNames)
     {
         const auto classJson = getObject(className, classesJson);
+        const auto classType = getString("type", classJson);
         const auto growthRatesJson = getObject("growthRates", classJson);
 
         const int hp = getValue("hp", growthRatesJson);
@@ -150,7 +174,7 @@ QList<FETHClass*> loadClasses()
         const int charm = getValue("charm", growthRatesJson);
 
         const auto growthRates = std::make_shared<FETHGrowthRates>(hp, str, mag, dex, spd, lck, def, res, charm);
-        FETHClass* feClass = new FETHClass(className, std::move(growthRates)); // TODO ochange ownership to delete later
+        FETHClass* feClass = new FETHClass(className, classType, std::move(growthRates)); // TODO ochange ownership to delete later
         feClasses.append(feClass);
     }
 
