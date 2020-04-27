@@ -12,7 +12,8 @@
             "def": 35,
             "res": 30,
             "charm": 45
-        }
+        },
+        "house": "Protagonist"
     },
     "Sothis (NPC)":
     {
@@ -27,7 +28,8 @@
             "def": 30,
             "res": 60,
             "charm": 70
-        }
+        },
+        "house": "Protagonist"
     },
     "Edelgard":
     {
@@ -42,7 +44,8 @@
             "def": 35,
             "res": 35,
             "charm": 60
-        }
+        },
+        "house": "Black Eagles"
     },
     "Hubert":
     {
@@ -57,7 +60,8 @@
             "def": 25,
             "res": 40,
             "charm": 35
-        }
+        },
+        "house": "Black Eagles"
     },
     "Dorothea":
     {
@@ -72,7 +76,8 @@
             "def": 15,
             "res": 35,
             "charm": 40
-        }
+        },
+        "house": "Black Eagles"
     },
     "Ferdinand":
     {
@@ -87,7 +92,8 @@
             "def": 35,
             "res": 20,
             "charm": 40
-        }
+        },
+        "house": "Black Eagles"
     },
     "Bernadetta":
     {
@@ -102,7 +108,8 @@
             "def": 20,
             "res": 30,
             "charm": 35
-        }
+        },
+        "house": "Black Eagles"
     },
     "Caspar":
     {
@@ -117,7 +124,8 @@
             "def": 30,
             "res": 20,
             "charm": 25
-        }
+        },
+        "house": "Black Eagles"
     },
     "Petra":
     {
@@ -132,7 +140,8 @@
             "def": 30,
             "res": 15,
             "charm": 35
-        }
+        },
+        "house": "Black Eagles"
     },
     "Linhardt":
     {
@@ -147,7 +156,8 @@
             "def": 30,
             "res": 45,
             "charm": 20
-        }
+        },
+        "house": "Black Eagles"
     },
     "Dimitri":
     {
@@ -162,7 +172,8 @@
             "def": 40,
             "res": 20,
             "charm": 55
-        }
+        },
+        "house": "Blue Lions"
     },
     "Dedue":
     {
@@ -177,7 +188,8 @@
             "def": 50,
             "res": 10,
             "charm": 30
-        }
+        },
+        "house": "Blue Lions"
     },
     "Felix":
     {
@@ -192,7 +204,8 @@
             "def": 30,
             "res": 20,
             "charm": 30
-        }
+        },
+        "house": "Blue Lions"
     },
     "Mercedes":
     {
@@ -207,7 +220,8 @@
             "def": 25,
             "res": 45,
             "charm": 40
-        }
+        },
+        "house": "Blue Lions"
     },
     "Ashe":
     {
@@ -222,7 +236,8 @@
             "def": 20,
             "res": 35,
             "charm": 25
-        }
+        },
+        "house": "Blue Lions"
     },
     "Annette":
     {
@@ -237,7 +252,8 @@
             "def": 20,
             "res": 30,
             "charm": 35
-        }
+        },
+        "house": "Blue Lions"
     },
     "Sylvain":
     {
@@ -252,7 +268,8 @@
             "def": 40,
             "res": 25,
             "charm": 40
-        }
+        },
+        "house": "Blue Lions"
     },
     "Ingrid":
     {
@@ -267,7 +284,8 @@
             "def": 30,
             "res": 40,
             "charm": 45
-        }
+        },
+        "house": "Blue Lions"
     },
     "Claude":
     {
@@ -282,7 +300,8 @@
             "def": 30,
             "res": 25,
             "charm": 55
-        }
+        },
+        "house": "Golden Deer"
     },
     "Lorenz":
     {
@@ -297,7 +316,8 @@
             "def": 30,
             "res": 40,
             "charm": 35
-        }
+        },
+        "house": "Golden Deer"
     },
     "Hilda":
     {
@@ -312,7 +332,8 @@
             "def": 35,
             "res": 20,
             "charm": 50
-        }
+        },
+        "house": "Golden Deer"
     },
     "Raphael":
     {
@@ -327,7 +348,8 @@
             "def": 45,
             "res": 10,
             "charm": 25
-        }
+        },
+        "house": "Golden Deer"
     },
     "Lysithea":
     {
@@ -342,7 +364,8 @@
             "def": 10,
             "res": 25,
             "charm": 25
-        }
+        },
+        "house": "Golden Deer"
     },
     "Ignatz":
     {
@@ -357,7 +380,8 @@
             "def": 25,
             "res": 35,
             "charm": 25
-        }
+        },
+        "house": "Golden Deer"
     },
     "Marianne":
     {
@@ -372,7 +396,8 @@
             "def": 15,
             "res": 45,
             "charm": 40
-        }
+        },
+        "house": "Golden Deer"
     },
     "Leonie":
     {
@@ -387,7 +412,8 @@
             "def": 40,
             "res": 15,
             "charm": 40
-        }
+        },
+        "house": "Golden Deer"
     },
     "Rhea (NPC)":
     {
@@ -402,7 +428,8 @@
             "def": 30,
             "res": 40,
             "charm": 70
-        }
+        },
+        "house": "Church of Seiros"
     },
     "Manuela":
     {
@@ -417,7 +444,8 @@
             "def": 30,
             "res": 25,
             "charm": 50
-        }
+        },
+        "house": "Church of Seiros"
     },
     "Hanneman":
     {
@@ -432,7 +460,8 @@
             "def": 25,
             "res": 40,
             "charm": 35
-        }
+        },
+        "house": "Church of Seiros"
     },
     "Seteth":
     {
@@ -447,7 +476,8 @@
             "def": 30,
             "res": 25,
             "charm": 45
-        }
+        },
+        "house": "Church of Seiros"
     },
     "Flayn":
     {
@@ -462,7 +492,8 @@
             "def": 25,
             "res": 50,
             "charm": 45
-        }
+        },
+        "house": "Church of Seiros"
     },
     "Cyril":
     {
@@ -477,7 +508,8 @@
             "def": 10,
             "res": 10,
             "charm": 15
-        }
+        },
+        "house": "Church of Seiros"
     },
     "Jeralt (NPC)":
     {
@@ -492,7 +524,8 @@
             "def": 35,
             "res": 35,
             "charm": 35
-        }
+        },
+        "house": "Knights of Seiros"
     },
     "Catherine":
     {
@@ -507,7 +540,8 @@
             "def": 30,
             "res": 20,
             "charm": 25
-        }
+        },
+        "house": "Knights of Seiros"
     },
     "Alois":
     {
@@ -522,7 +556,8 @@
             "def": 40,
             "res": 20,
             "charm": 40
-        }
+        },
+        "house": "Knights of Seiros"
     },
     "Gilbert":
     {
@@ -537,7 +572,8 @@
             "def": 45,
             "res": 10,
             "charm": 35
-        }
+        },
+        "house": "Knights of Seiros"
     },
     "Shamir":
     {
@@ -552,7 +588,8 @@
             "def": 20,
             "res": 15,
             "charm": 30
-        }
+        },
+        "house": "Knights of Seiros"
     },
     "Yuri":
     {
@@ -567,7 +604,8 @@
             "def": 30,
             "res": 35,
             "charm": 50
-        }
+        },
+        "house": "Ashen Wolves"
     },
     "Balthus":
     {
@@ -582,7 +620,8 @@
             "def": 45,
             "res": 30,
             "charm": 30
-        }
+        },
+        "house": "Ashen Wolves"
     },
     "Constance":
     {
@@ -597,7 +636,8 @@
             "def": 15,
             "res": 30,
             "charm": 25
-        }
+        },
+        "house": "Ashen Wolves"
     },
     "Hapi":
     {
@@ -612,7 +652,8 @@
             "def": 15,
             "res": 45,
             "charm": 25
-        }
+        },
+        "house": "Ashen Wolves"
     },
     "Jeritza":
     {
@@ -627,7 +668,8 @@
             "def": 40,
             "res": 25,
             "charm": 25
-        }
+        },
+        "house": "Church of Seiros"
     },
     "Anna":
     {
@@ -642,6 +684,7 @@
             "def": 30,
             "res": 40,
             "charm": 50 
-        }
+        },
+        "house": "Other"
     }
 }

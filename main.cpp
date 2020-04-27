@@ -196,6 +196,7 @@ QList<FETHCharacter*> loadCharacters()
     for(const auto& charName : characterNames)
     {
         const auto charJson = getObject(charName, charactersJson);
+        const auto house = getString("house", charJson);
         const auto growthRatesJson = getObject("growthRates", charJson);
 
         const int hp = getValue("hp", growthRatesJson);
@@ -209,7 +210,7 @@ QList<FETHCharacter*> loadCharacters()
         const int charm = getValue("charm", growthRatesJson);
 
         const auto growthRates = std::make_shared<FETHGrowthRates>(hp, str, mag, dex, spd, lck, def, res, charm);
-        FETHCharacter* character = new FETHCharacter(charName, growthRates); // TODO ochange ownership to delete later
+        FETHCharacter* character = new FETHCharacter(charName, house, growthRates); // TODO ochange ownership to delete later
         feCharacters.append(character);
     }
 
