@@ -31,11 +31,17 @@ int main(int argc, char *argv[]) try
     qmlRegisterUncreatableType<FETHClass>("feth", 1, 0, "FETHClass", "FETHClass instance is provided by the application");
 
     auto feClasses = loadClasses();
-    const auto feCharacters = loadCharacters();
+    auto feCharacters = loadCharacters();
 
     std::sort(feClasses.begin(), feClasses.end(), [](const FETHClass* const left, const FETHClass* const right){
         const auto leftIndex = left->getClassTypeOrderIndex();
         const auto rightIndex = right->getClassTypeOrderIndex();
+        return leftIndex < rightIndex;
+    });
+
+    std::sort(feCharacters.begin(), feCharacters.end(), [](const FETHCharacter* const left, const FETHCharacter* const right){
+        const auto leftIndex = left->getHouseOrderIndex();
+        const auto rightIndex = right->getHouseOrderIndex();
         return leftIndex < rightIndex;
     });
 

@@ -31,6 +31,20 @@ ApplicationWindow
 
             ScrollIndicator.vertical: ScrollIndicator { }
             ScrollIndicator.horizontal: ScrollIndicator { }
+
+            section.property: "modelData.house"
+            section.criteria: ViewSection.FullString
+            section.delegate: Pane
+            {
+                width: parent.width
+                Label
+                {
+                    anchors.centerIn: parent
+                    text: section
+                    font.bold: true
+                    font.pointSize: 14
+                }
+            }
         }
 
         ListView
