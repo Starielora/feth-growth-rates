@@ -19,13 +19,6 @@ GroupBox
     {
         spacing: 10
 
-        ComboBox
-        {
-            id: comboBox
-            model: characterClasses
-            textRole: "name"
-            currentIndex: -1
-        }
         Stat
         {
             name: "HP"
@@ -79,6 +72,13 @@ GroupBox
             name: "Charm"
             characterGrowth: character.baseGrowthRates.charm
             classGrowth: comboBox.currentValue ? comboBox.currentValue.growthRates.charm : 0
+        }
+        ComboBox
+        {
+            id: comboBox
+            model: characterClasses
+            textRole: "name"
+            currentIndex: -1
         }
         Button
         {
