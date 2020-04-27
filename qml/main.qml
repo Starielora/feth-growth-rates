@@ -35,12 +35,45 @@ ApplicationWindow
 
         ListView
         {
+            id: classListView
             clip: true
             contentWidth: contentItem.childrenRect.width
             spacing: 5
             flickableDirection: Flickable.AutoFlickIfNeeded
 
-            model: characterClasses
+            property bool filtered: false
+            property var filteredItems: []
+
+            header: RowLayout
+            {
+                spacing: 10
+
+                TextField
+                {
+                    placeholderText: "Filter classes..."
+                    onTextChanged:
+                    {
+                        classListView.showFilteredItems(text);
+                        forceActiveFocus()
+                    }
+                }
+
+                ComboBox
+                {
+                    currentIndex: -1
+                    model: {
+                        var classTypes = new Set()
+                        classTypes.add("")
+                        characterClasses.forEach(c => classTypes.add(c.type))
+                        return Array.from(classTypes)
+                    }
+                    onCurrentIndexChanged: {
+                        classListView.showFilteredSections(textAt(currentIndex))
+                    }
+                }
+            }
+
+            model: filtered ? filteredItems : characterClasses
 
             delegate: ClassBox { feClass: model.modelData }
 
@@ -58,6 +91,36 @@ ApplicationWindow
                     text: section
                     font.bold: true
                     font.pointSize: 14
+                }
+            }
+
+            function showFilteredItems(text)
+            {
+                classListView.filteredItems.length = 0
+                if(text !== "")
+                {
+                    filtered = true
+                    model = characterClasses.filter(c => c.name.toLowerCase().match(text.toLowerCase()) || c.type.toLowerCase().match(text.toLowerCase()))
+                }
+                else
+                {
+                    filtered = false
+                    model = characterClasses
+                }
+            }
+
+            function showFilteredSections(text)
+            {
+                classListView.filteredItems.length = 0
+                if(text !== "")
+                {
+                    filtered = true
+                    model = characterClasses.filter(c => c.type.toLowerCase().match(text.toLowerCase()))
+                }
+                else
+                {
+                    filtered = false
+                    model = characterClasses
                 }
             }
         }
