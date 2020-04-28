@@ -6,6 +6,7 @@
 #include <QJsonObject>
 #include <QFile>
 #include <QDebug>
+#include <QDirIterator>
 
 #include "FETHCharacter.h"
 #include "FETHClass.h"
@@ -134,6 +135,24 @@ QString getString(const QString& name, const QJsonObject& json)
     return val.toString();
 }
 
+QStringList getPortraits(const QString& name)
+{
+    QStringList portraits;
+
+    QDirIterator it(":/data/portraits", QDirIterator::Subdirectories);
+    while (it.hasNext()) {
+        const auto portrait = it.next();
+        if(portrait.contains(name))
+        {
+            portraits.append(QUrl(portrait).fileName());
+        }
+    }
+
+    std::sort(portraits.begin(), portraits.end());
+
+    return portraits;
+}
+
 QJsonDocument loadJson(const QString path)
 {
     QFile f(path);
@@ -204,6 +223,7 @@ QList<FETHCharacter*> loadCharacters()
         const auto charJson = getObject(charName, charactersJson);
         const auto house = getString("house", charJson);
         const auto growthRatesJson = getObject("growthRates", charJson);
+        const auto portraits = getPortraits(charName);
 
         const int hp = getValue("hp", growthRatesJson);
         const int str = getValue("str", growthRatesJson);
@@ -216,7 +236,7 @@ QList<FETHCharacter*> loadCharacters()
         const int charm = getValue("charm", growthRatesJson);
 
         const auto growthRates = std::make_shared<FETHGrowthRates>(hp, str, mag, dex, spd, lck, def, res, charm);
-        FETHCharacter* character = new FETHCharacter(charName, house, growthRates); // TODO ochange ownership to delete later
+        FETHCharacter* character = new FETHCharacter(charName, house, growthRates, portraits); // TODO ochange ownership to delete later
         feCharacters.append(character);
     }
 

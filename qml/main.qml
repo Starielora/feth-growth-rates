@@ -23,7 +23,7 @@ ApplicationWindow
             id: charsListView
             clip: true
             contentWidth: contentItem.childrenRect.width
-            spacing: 5
+            spacing: 10
             flickableDirection: Flickable.AutoFlickIfNeeded
 
             property bool filtered: false

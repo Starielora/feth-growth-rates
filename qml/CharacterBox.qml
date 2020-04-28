@@ -15,78 +15,129 @@ GroupBox
         text: character.name
     }
 
-    RowLayout
+    ColumnLayout
     {
-        spacing: 10
-
-        Stat
+        RowLayout
         {
-            name: "HP"
-            characterGrowth: character.baseGrowthRates.hp
-            classGrowth: comboBox.currentValue ? comboBox.currentValue.growthRates.hp : 0
-        }
-        Stat
-        {
-            name: "Str"
-            characterGrowth: character.baseGrowthRates.str
-            classGrowth: comboBox.currentValue ? comboBox.currentValue.growthRates.str : 0
-        }
-        Stat
-        {
-            name: "Mag"
-            characterGrowth: character.baseGrowthRates.mag
-            classGrowth: comboBox.currentValue ? comboBox.currentValue.growthRates.mag : 0
-        }
-        Stat
-        {
-            name: "Dex"
-            characterGrowth: character.baseGrowthRates.dex
-            classGrowth: comboBox.currentValue ? comboBox.currentValue.growthRates.dex : 0
-        }
-        Stat
-        {
-            name: "Spd"
-            characterGrowth: character.baseGrowthRates.spd
-            classGrowth: comboBox.currentValue ? comboBox.currentValue.growthRates.spd : 0
-        }
-        Stat
-        {
-            name: "Lck"
-            characterGrowth: character.baseGrowthRates.lck
-            classGrowth: comboBox.currentValue ? comboBox.currentValue.growthRates.lck : 0
-        }
-        Stat
-        {
-            name: "Def"
-            characterGrowth: character.baseGrowthRates.def
-            classGrowth: comboBox.currentValue ? comboBox.currentValue.growthRates.def : 0
-        }
-        Stat
-        {
-            name: "Res"
-            characterGrowth: character.baseGrowthRates.res
-            classGrowth: comboBox.currentValue ? comboBox.currentValue.growthRates.res : 0
-        }
-        Stat
-        {
-            name: "Charm"
-            characterGrowth: character.baseGrowthRates.charm
-            classGrowth: comboBox.currentValue ? comboBox.currentValue.growthRates.charm : 0
-        }
-        ComboBox
-        {
-            id: comboBox
-            model: characterClasses
-            textRole: "name"
-            currentIndex: -1
-        }
-        Button
-        {
-            text: "Clear"
-            visible: comboBox.currentIndex !== -1
-            onClicked:
+            Item
             {
-                comboBox.currentIndex = -1
+                Layout.preferredWidth: 128
+                Layout.preferredHeight: 128
+                SwipeView
+                {
+                    id: view
+                    clip: true
+                    anchors.fill: parent
+                    Repeater
+                    {
+                        model: character.portraits
+                        Loader {
+                            active: SwipeView.isCurrentItem
+                            sourceComponent: Image
+                            {
+                                fillMode: Image.PreserveAspectFit
+                                source: "qrc:/data/portraits/" + modelData
+                            }
+                        }
+                    }
+                }
+                MouseArea
+                {
+                    anchors.fill: parent
+                    onClicked:
+                    {
+                        view.currentIndex = view.currentIndex === view.count - 1 ? 0 : view.currentIndex + 1
+                    }
+                }
+                PageIndicator {
+                    count: view.count
+                    currentIndex: view.currentIndex
+                    anchors.bottom: view.bottom
+                    anchors.horizontalCenter: view.horizontalCenter
+                }
+            }
+
+            ColumnLayout
+            {
+                Layout.alignment: Qt.AlignTop
+                ComboBox
+                {
+                    Layout.fillWidth: true
+                    id: comboBox
+                    model: characterClasses
+                    textRole: "name"
+                    currentIndex: -1
+                }
+                Button
+                {
+                    Layout.fillWidth: true
+                    text: "Clear"
+                    opacity: comboBox.currentIndex !== -1 ? 1 : 0
+                    onClicked:
+                    {
+                        comboBox.currentIndex = -1
+                    }
+                }
+            }
+        }
+
+        RowLayout
+        {
+            spacing: 10
+
+            Stat
+            {
+                name: "HP"
+                characterGrowth: character.baseGrowthRates.hp
+                classGrowth: comboBox.currentValue ? comboBox.currentValue.growthRates.hp : 0
+            }
+            Stat
+            {
+                name: "Str"
+                characterGrowth: character.baseGrowthRates.str
+                classGrowth: comboBox.currentValue ? comboBox.currentValue.growthRates.str : 0
+            }
+            Stat
+            {
+                name: "Mag"
+                characterGrowth: character.baseGrowthRates.mag
+                classGrowth: comboBox.currentValue ? comboBox.currentValue.growthRates.mag : 0
+            }
+            Stat
+            {
+                name: "Dex"
+                characterGrowth: character.baseGrowthRates.dex
+                classGrowth: comboBox.currentValue ? comboBox.currentValue.growthRates.dex : 0
+            }
+            Stat
+            {
+                name: "Spd"
+                characterGrowth: character.baseGrowthRates.spd
+                classGrowth: comboBox.currentValue ? comboBox.currentValue.growthRates.spd : 0
+            }
+            Stat
+            {
+                name: "Lck"
+                characterGrowth: character.baseGrowthRates.lck
+                classGrowth: comboBox.currentValue ? comboBox.currentValue.growthRates.lck : 0
+            }
+            Stat
+            {
+                name: "Def"
+                characterGrowth: character.baseGrowthRates.def
+                classGrowth: comboBox.currentValue ? comboBox.currentValue.growthRates.def : 0
+            }
+            Stat
+            {
+                name: "Res"
+                characterGrowth: character.baseGrowthRates.res
+                classGrowth: comboBox.currentValue ? comboBox.currentValue.growthRates.res : 0
+            }
+            Stat
+            {
+                name: "Charm"
+                characterGrowth: character.baseGrowthRates.charm
+                classGrowth: comboBox.currentValue ? comboBox.currentValue.growthRates.charm : 0
             }
         }
     }

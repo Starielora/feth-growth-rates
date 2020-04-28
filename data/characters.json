@@ -15,7 +15,7 @@
         },
         "house": "Protagonist"
     },
-    "Sothis (NPC)":
+    "Sothis":
     {
         "growthRates":
         {
@@ -415,7 +415,7 @@
         },
         "house": "Golden Deer"
     },
-    "Rhea (NPC)":
+    "Rhea":
     {
         "growthRates":
         {
@@ -511,7 +511,7 @@
         },
         "house": "Church of Seiros"
     },
-    "Jeralt (NPC)":
+    "Jeralt":
     {
         "growthRates":
         {
