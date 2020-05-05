@@ -4,6 +4,9 @@
         <file>qml/main.qml</file>
         <file>qml/Stat.qml</file>
         <file>qml/CharacterBox.qml</file>
+        <file>qml/CharacterPortrait.qml</file>
+        <file>qml/CharacterClass.qml</file>
+        <file>qml/CharacterStats.qml</file>
         <file>qml/ClassBox.qml</file>
         <file>data/classes.json</file>
         <file>data/characters.json</file>
