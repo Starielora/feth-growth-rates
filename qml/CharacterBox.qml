@@ -35,6 +35,9 @@ GroupBox
                             active: SwipeView.isCurrentItem
                             sourceComponent: Image
                             {
+                                asynchronous: true
+                                mipmap: true
+                                cache: false
                                 fillMode: Image.PreserveAspectFit
                                 source: "qrc:/data/portraits/" + modelData
                             }
@@ -83,7 +86,7 @@ GroupBox
 
         RowLayout
         {
-            spacing: 10
+            spacing: 5
 
             Stat
             {
