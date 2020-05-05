@@ -3,6 +3,8 @@ import QtQuick.Controls 2.4
 import QtQuick.Layouts 1.3
 import QtGraphicalEffects 1.0
 
+import QtQuick.Controls.Material 2.12
+
 ColumnLayout
 {
     property alias name: statNameLabel.text
@@ -13,7 +15,7 @@ ColumnLayout
     Label
     {
         id: statNameLabel
-        opacity: 0.25
+        color: Material.color(Material.Grey)
         Layout.fillHeight: true
         Layout.fillWidth: true
         horizontalAlignment: Text.AlignHCenter
@@ -29,9 +31,15 @@ ColumnLayout
 
         color:
         {
-            if(classGrowth == 0) return "white" // TODO will break if material theme is changed.. should be theme-default
-            else if(classGrowth > 0) return "green"
-            else return "red"
+            if(classGrowth == 0)
+            {
+                if(Material.theme === Material.Dark)
+                    return "white"
+                else
+                    return "black"
+            }
+            else if(classGrowth > 0) return Material.color(Material.Green)
+            else return Material.color(Material.Red)
         }
 
         MouseArea

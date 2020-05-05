@@ -2,6 +2,8 @@ import QtQuick 2.14
 import QtQuick.Controls 2.4
 import QtQuick.Layouts 1.3
 
+import QtQuick.Controls.Material 2.12
+
 import feth 1.0
 
 ApplicationWindow
@@ -29,18 +31,67 @@ ApplicationWindow
         }
     }
 
-    footer: TabBar {
-        id: bar
+    footer: RowLayout
+    {
         width: parent.width
-
-        TabButton
+        TabBar
         {
-            text: "Characters"
+            id: bar
+            Layout.fillWidth: true
+
+            TabButton
+            {
+                text: "Characters"
+            }
+
+            TabButton
+            {
+                text: "Classes"
+            }
         }
 
-        TabButton
+        ToolButton
         {
-            text: "Classes"
+            text: qsTr("⋮")
+            onClicked: settingsDialog.open()
+        }
+    }
+
+    Dialog
+    {
+        id: settingsDialog
+        modal: true
+        anchors.centerIn: parent
+
+        GroupBox
+        {
+            title: "Settings"
+            anchors.fill: parent
+
+            ColumnLayout
+            {
+                RowLayout
+                {
+                    Label
+                    {
+                        text: "Theme"
+                    }
+                    ComboBox
+                    {
+                        model: ["Dark", "Light"]
+                        onCurrentIndexChanged:
+                        {
+                            const theme = valueAt(currentIndex)
+                            if(theme === "Dark")
+                                window.Material.theme = Material.Dark
+                            else if(theme === "Light")
+                                window.Material.theme = Material.Light
+                            else
+                                console.error("Unknown theme:" + theme)
+                        }
+                    }
+                }
+            }
         }
     }
 }
