@@ -8,6 +8,8 @@
         <file>qml/CharacterClass.qml</file>
         <file>qml/CharacterStats.qml</file>
         <file>qml/ClassBox.qml</file>
+        <file>qml/CharactersListView.qml</file>
+        <file>qml/ClassesListView.qml</file>
         <file>data/classes.json</file>
         <file>data/characters.json</file>
         <file>data/portraits/Alois_1.png</file>
